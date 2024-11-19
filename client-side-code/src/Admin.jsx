@@ -30,10 +30,10 @@ export const Admin = ({web3, courseContract})=> {
             padding: '100px',
             backgroundColor: '#3e4a61',
             borderRadius: '10px'}}>
-            <h1>Transactions</h1>    
-            <h2>Admin</h2>
-            <h3>Total {payments.length} people payment history</h3>
-            <h4>{payments.map(payment => (
+            <h1 className="text-8xl text-amber-100">Transactions</h1>    
+            
+            <h3 className="text-3xl m-6 underline underline-offset-4 text-amber-200">Total {payments.length} people payment history:</h3>
+            <h4 className="text-2xl ">{payments.map(payment => (
                 <div key = {payment.email} >
                     <p>Email: {payment.email} </p>
                 </div>    
