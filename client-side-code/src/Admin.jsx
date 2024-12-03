@@ -35,7 +35,7 @@ export const Admin = ({web3, courseContract})=> {
             <h3 className="text-3xl m-6 underline underline-offset-4 text-amber-200">Total {payments.length} people payment history:</h3>
             <h4 className="text-2xl ">{payments.map(payment => (
                 <div key = {payment.email} >
-                    <p>Email: {payment.email} </p>
+                    <p className="mt-2">Email: {payment.email} </p>
                 </div>    
             ))}</h4>
         </div>

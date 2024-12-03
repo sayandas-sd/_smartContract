@@ -50,8 +50,8 @@ export const AccountResgitration = ({web3, courseContract, courseFee})=> {
         
         <div style = {{
             border: '4px solid black',
-            padding: '150px',
-            backgroundColor: '#243642',
+            padding: '100px',
+            backgroundColor: '#243643',
             borderRadius: '10px'
         }}>
             <br />
@@ -73,10 +73,10 @@ export const AccountResgitration = ({web3, courseContract, courseFee})=> {
                 borderRadius: '10px', 
                 fontSize: '20px'
             }}
-            />
+            className="placeholder:text-gray-500 pl-[100px]"/>
             <br />
             <br />
-            <button onClick={paymentForFee}>Pay Now</button>
+            <button onClick={paymentForFee} className="font-bold text-lg">Pay Now</button>
         </div>
     );
 };
